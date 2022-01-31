@@ -1,10 +1,4 @@
-from hmac import digest
-from unicodedata import digit
-
-
-class keyFunctions:
-
-
+class KeyFunctions:
     def countChars(self,str):
         """ Takes a given string and returns the count of special symbols, digits, and chars in a dictionary """
         symbols = ['!', '@', '#', '$', '%', '^', '&', '*']
@@ -28,7 +22,11 @@ class keyFunctions:
               charsAndCountDict['chars'] += 1
         return charsAndCountDict
 
+    def stringConvert(self, str1, str2):
+      for i in range(len(str1)):
+        print(i)
+
 str1 = "P@#yn26at^&i5ve"
 if __name__ == '__main__':
-  func1 = keyFunctions()
-  print(func1.countChars(str1))
+  func1 = KeyFunctions()
+  # print(func1.countChars(str1))
